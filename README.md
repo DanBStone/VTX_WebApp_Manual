@@ -1,9 +1,9 @@
 # VTX-200 Wind Tunnel UI – User Manual
 
 [![Docs Status](https://img.shields.io/badge/docs-stable-success)](#)
-[![Docs Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimteq%2FVTX-200-UI-Manual%2Fmain%2Fdocs%2Fversion.json&label=docs%20version&query=%24.version&prefix=v%20)](#changelog)
-[![Issues](https://img.shields.io/github/issues/simteq/VTX-200-UI-Manual)](https://github.com/simteq/VTX-200-UI-Manual/issues)
-[![Discussions](https://img.shields.io/github/discussions/simteq/VTX-200-UI-Manual)](https://github.com/simteq/VTX-200-UI-Manual/discussions)
+[![Docs Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2F<ORG>%2F<REPO>%2Fmain%2Fdocs%2Fversion.json&label=docs%20version&query=%24.version&prefix=v%20)](#changelog)
+[![Issues](https://img.shields.io/github/issues/<ORG>/<REPO>)](https://github.com/<ORG>/<REPO>/issues)
+[![Discussions](https://img.shields.io/github/discussions/<ORG>/<REPO>)](https://github.com/<ORG>/<REPO>/discussions)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-informational)](LICENSE)
 
 This repository is the **official instruction manual** for the VTX-200 Wind Tunnel Web App, developed by **Simteq Engineering**.  
