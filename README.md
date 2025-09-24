@@ -59,16 +59,19 @@ The web app is **pre-installed** on your wind tunnel hardware—no extra setup i
 
 ## Best Practices
 
-- Tare (zero) before each test.  
-- Let readings stabilize before recording.  
-- Download CSV after each session.
-
----
+- Always zero (tare) the strain gauges before starting a test.
+- Wait for readings to stabilize before recording data.
+- Download your CSV file after each recording session.
 
 ## Troubleshooting
 
-- **App doesn’t load** – Ensure Wi-Fi (`WindTunnel_AP`) and power; refresh or try another device.  
-- **No live data** – Check hardware/sensor connections; try Zero Scales.
+- **Web app doesn’t load:**  
+    - Make sure you are connected to `WindTunnel_AP` WiFi.
+    - Ensure the controller is powered on.
+    - Try refreshing your browser or a different device.
+- **No live data:**  
+    - Check that all hardware and sensors are properly connected.
+    - Try zeroing the scales if readings are stuck.
 
 ---
 
