@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Product Support (Email)
+    url: mailto:info@simteq.co.za
+    about: For commercial or account-related support.
+  - name: Simteq Website
+    url: https://www.simteq.co.za
+    about: Company site.
