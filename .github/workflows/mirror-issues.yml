@@ -1,0 +1,38 @@
+name: Mirror community issues privately
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare mirror body
+        id: prep
+        run: |
+          mkdir -p .github/issue-templates
+          cat > .github/issue-templates/mirror.md << 'EOF'
+          Public issue: simteq/VTX-200-UI-Manual#${{ github.event.issue.number }}
+
+          Reporter: ${{ github.event.issue.user.login }}
+
+          Title:
+          ${{ github.event.issue.title }}
+
+          Body:
+          ${{ github.event.issue.body }}
+          EOF
+
+      - name: Create/Update shadow issue
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}   # PAT with 'repo' scope that can access the private repo
+          repository: simteq/VTX-200-UI-Source       # <- your private code repo
+          title: "[PUBLIC] #${{ github.event.issue.number }}: ${{ github.event.issue.title }}"
+          content-filepath: .github/issue-templates/mirror.md
+          labels: |
+            from-public
